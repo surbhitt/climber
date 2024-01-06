@@ -8,8 +8,14 @@ A study of the rope data structure and comparitive analysis aginst the tradition
 
 ## Build
 
-```
+```console
+$ make
+## or
 $ gcc -o rope.out rope.c
 ```
 
 ## Libraries Used
+
+## Test
+
+On running the program with [t8.shakespear.txt](https://ocw.mit.edu/ans7870/6/6.006/s08/lecturenotes/files/t8.shakespeare.txt) the whole file traversal took 0.420s average compared to cat 0.200s.
