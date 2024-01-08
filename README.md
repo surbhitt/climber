@@ -11,7 +11,7 @@ A study of the rope data structure and comparitive analysis aginst the tradition
 ```console
 $ make
 ## or
-$ gcc -o rope.out rope.c
+$ gcc -g rope.c rope_test.c -o rope.out
 ```
 
 ## Libraries Used
