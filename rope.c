@@ -38,6 +38,7 @@ Rope* create_rope(FILE *fptr, int beg, int end) {
 }
 
 void traverse_dfs_in(Rope* head, Operation op) {
+   if (!head) return ; 
    if (head->left) traverse_dfs_in(head->left, op);
    if (head->right) traverse_dfs_in(head->right, op);
    op(head);
