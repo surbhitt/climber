@@ -37,10 +37,10 @@ Rope* create_rope(FILE *fptr, int beg, int end) {
     return head;
 }
 
-void traverse_dfs_in(Rope* head, Operation op) {
+void traverse_dfs_post(Rope* head, Operation op) {
    if (!head) return ; 
-   if (head->left) traverse_dfs_in(head->left, op);
-   if (head->right) traverse_dfs_in(head->right, op);
+   if (head->left) traverse_dfs_post(head->left, op);
+   if (head->right) traverse_dfs_post(head->right, op);
    op(head);
 }
 
@@ -48,7 +48,6 @@ void destroy_rope(Rope* head) {
     free(head->content);
     free(head->left);
     free(head->right);
-    /* free(head); */
 }
 
 void print_rope(Rope* head) {

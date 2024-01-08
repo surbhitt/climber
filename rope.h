@@ -13,7 +13,7 @@ typedef struct Rope {
 Rope* create_rope(FILE*, int, int);
 
 typedef void (*Operation)(Rope*);
-void traverse_dfs_in(Rope*, Operation);
+void traverse_dfs_post(Rope*, Operation);
 
 void destroy_rope(Rope*); 
 void print_rope(Rope*);
