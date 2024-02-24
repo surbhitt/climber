@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #ifndef ROPE_H_
 #define ROPE_H_
